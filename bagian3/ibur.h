@@ -2,7 +2,6 @@
 #define IBU_H
 #include <vector>
 
-using namespace std;
 
 class ibu {
 public:
@@ -16,10 +15,9 @@ public:
 	~ibu() {
 		cout << "ibu \"" << nama << "\" tidak ada\n";
 	}
-	void Tambahanak(anak*);
+	void tambahanak(anak*);
 	void cetakanak();
 };
-
 
 
 void ibu::cetakanak() {
@@ -31,9 +29,7 @@ void ibu::cetakanak() {
 	cout << endl;
 }
 
-void ibu::Tambahanak(anak* panak) {
-	daftar_anak.push_back(panak);
-}
 
-#endif // !IBU_H
+
+#endif
 
